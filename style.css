@@ -18,13 +18,19 @@ body {
     border: 3px solid white;
 }
 
-#btnSetUpSize{
+button {
     display: block;
-    height: 40px;
-    padding: 0 20px;
     margin: 20px auto;
-    border: 1px solid white;
+    padding: 0 20px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 15px;
+}
+
+#btnSetUpSize {
+    height: 40px;
+}
+
+#btnClear {
+    height: 30px;
 }

@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 const btnSetUpSize = document.querySelector("#btnSetUpSize");
+const btnClear = document.querySelector("#btnClear");
 
 let gridSize = 16;
 let squareSize = 960 / gridSize;
@@ -11,6 +12,9 @@ function createGridOfSquares(numberOfSquares, squareSize) {
         square.setAttribute("style", `width: ${squareSize}px; height: ${squareSize}px;`);
         square.addEventListener("mouseenter", () => {
             square.style.backgroundColor = "black";
+        });
+        btnClear.addEventListener("click", () => {
+            square.style.backgroundColor = "white";
         });
         container.appendChild(square);
     }
